@@ -1,0 +1,543 @@
+<!doctype html>
+<html class="overflow-x-hidden">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="./styles/tailwind.css">
+	<script src="./app/app.js" defer></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+	<link rel="shortcut icon" href="./img/logo.png">
+	<title>Salt</title>
+</head>
+
+<body class="w-full overflow-x-hidden relative">
+	<header
+		class="mt-[-1px] pt-8 px-7 pb-[50px] bg-[url(./img/bg.png)] bg-no-repeat bg-center mobile:bg-cover tablet:bg-cover laptop:bg-cover desktop:bg-contain mobile:p-7 max-w-[1600px] mx-auto"
+		id="home">
+		<div
+			class="flex flex-wrap justify-between items-center w-full max-w-[1154px] mx-auto tablet:mb-[129px] laptop:mb-[129px] desktop:mb-[120px] mobile:mb-[44px]">
+			<div>
+				<a href="" class="">
+					<img src="./img/logo.png" alt="" class="duration-200 ease-in hover:scale-[1.05] mobile:w-[39px]">
+				</a>
+			</div>
+			<button
+				class="cursor-pointer burger mobile:flex tablet:hidden laptop:hidden desktop:hidden items-center absolute w-[26px] top-[52px] right-[29px] z-50">
+				<span
+					class="inline-block w-[23px] h-[2px] bg-white rounded-[5px] absolute z-50 left-0 top-[-8px] duration-200 ease-in"></span>
+				<span
+					class="inline-block w-[23px] h-[2px] bg-white rounded-[5px] absolute z-50 left-0 top-0 duration-200 ease-in"></span>
+				<span
+					class="inline-block w-[23px] h-[2px] bg-white rounded-[5px] absolute z-50 left-0 top-2 duration-200 ease-in"></span>
+			</button>
+			<nav
+				class="mobile:bg-white mobile:absolute mobile:h-screen mobile:w-full mobile:max-w-[300px] mobile:left-[-100%] mobile:top-0 mobile:z-30 mobile:p-4 mobile:space-y-4 duration-200 ease-in">
+				<ul
+					class="flex mobile:flex-col tablet:space-x-4 laptop:space-x-4 desktop:space-x-4 mt-[25px] uppercase tablet:text-white laptop:text-white desktop:text-white text-[15px] font-bold leading-[18px] mobile:text-[#7050E5]">
+					<li
+						class="px-1 pb-2 duration-200 ease-in tablet:border-b-[3px] laptop:border-b-[3px] desktop:border-b-[3px] tablet:border-solid laptop:border-solid desktop:border-solid tablet:border-transparent laptop:border-transparent desktop:border-transparent tablet:hover:border-[#FF8B00] laptop:hover:border-[#FF8B00] desktop:hover:border-[#FF8B00]">
+						<a href="#home">home</a>
+					</li>
+					<li
+						class="px-1 pb-2 duration-200 ease-in tablet:border-b-[3px] laptop:border-b-[3px] desktop:border-b-[3px] tablet:border-solid laptop:border-solid desktop:border-solid tablet:border-transparent laptop:border-transparent desktop:border-transparent tablet:hover:border-[#FF8B00] laptop:hover:border-[#FF8B00] desktop:hover:border-[#FF8B00]">
+						<a href="#products">products</a>
+					</li>
+					<li
+						class="px-1 pb-2 duration-200 ease-in tablet:border-b-[3px] laptop:border-b-[3px] desktop:border-b-[3px] tablet:border-solid laptop:border-solid desktop:border-solid tablet:border-transparent laptop:border-transparent desktop:border-transparent tablet:hover:border-[#FF8B00] laptop:hover:border-[#FF8B00] desktop:hover:border-[#FF8B00]">
+						<a href="#services">services</a>
+					</li>
+					<li
+						class="px-1 pb-2 duration-200 ease-in tablet:border-b-[3px] laptop:border-b-[3px] desktop:border-b-[3px] tablet:border-solid laptop:border-solid desktop:border-solid tablet:border-transparent laptop:border-transparent desktop:border-transparent tablet:hover:border-[#FF8B00] laptop:hover:border-[#FF8B00] desktop:hover:border-[#FF8B00]">
+						<a href="#resources">resources</a>
+					</li>
+					<li
+						class="px-1 pb-2 duration-200 ease-in tablet:border-b-[3px] laptop:border-b-[3px] desktop:border-b-[3px] tablet:border-solid laptop:border-solid desktop:border-solid tablet:border-transparent laptop:border-transparent desktop:border-transparent tablet:hover:border-[#FF8B00] laptop:hover:border-[#FF8B00] desktop:hover:border-[#FF8B00]">
+						<a href="#about">about</a>
+					</li>
+					<li
+						class="px-1 pb-2 duration-200 ease-in tablet:border-b-[3px] laptop:border-b-[3px] desktop:border-b-[3px] tablet:border-solid laptop:border-solid desktop:border-solid tablet:border-transparent laptop:border-transparent desktop:border-transparent tablet:hover:border-[#FF8B00] laptop:hover:border-[#FF8B00] desktop:hover:border-[#FF8B00]">
+						<a href="#contact">contact us</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div
+			class="w-full max-w-[988px] mx-auto flex tablet:flex-col mobile:flex-col flex-wrap justify-between items-center tablet:pr-[65px] laptop:pr-[65px] desktop:pr-[65px] mobile:mb-[68px] tablet:mb-[135px] laptop:mb-[135px] desktop:mb-[145px] relative">
+			<div class="w-full max-w-[590px] mobile:order-2 tablet:order-2 mobile:mt-[65px] tablet:mt-[65px] mobile:mb-1">
+				<h1
+					class="tablet:text-[55px] laptop:text-[55px] desktop:text-[55px] mobile:text-[32px] mobile:leading-10 tablet:leading-[55px] laptop:leading-[55px] desktop:leading-[55px] text-white font-bold mobile:mb-4 desktop:mb-3 capitalize">
+					Device Authentication</h1>
+				<p
+					class="text-[15px] tablet:leading-[30px] laptop:leading-[30px] desktop:leading-[30px] mobile:leading-[20px] text-white font-semibold laptop:pr-[90px] desktop:pr-[90px]">
+					SALT Group is a world leader in authentication and security. We have a range of services to improve user
+					authentication.</p>
+				<p
+					class="text-[15px] tablet:leading-[30px] laptop:leading-[30px] desktop:leading-[30px] mobile:leading-[20px text-white font-semibold destop:pr-[30px] mobile:mb-8 tablet:mb-11 laptop:mb-11 desktop:mb-11">
+					Discover the possibilities with SALT.
+				</p>
+				<a href="#"
+					class="inline-block text-[13px] leading-[13px] py-5 px-[41px] bg-[#FF8B00] uppercase text-white rounded-[4px] duration-200 ease-in hover:scale-[1.05]">get
+					started</a>
+			</div>
+			<div
+				class="absolute w-full max-w-[19px] z-50 desktop:left-[123.5%] top-[64px] h-[88px] laptop:left-full tablet:hidden mobile:hidden desktop:mt-[22px]">
+				<div class=" swiper-pagination w-[19px] h-[82px]"></div>
+			</div>
+
+			<div
+				class="swiper mobile:mx-auto tablet:mx-auto laptop:m-0 desktop:m-0 w-full mobile:max-w-full tablet:max-w-full laptop:max-w-[151px] desktop:max-w-[151px]">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div
+							class="swiper-slide flex justify-center mobile:mt-[7px] tablet:mt-3 laptop:mt-4 desktop:mt-[22px] mobile:order-1 mobile:mx-auto tablet:order-1 tablet:mx-auto ">
+							<img src="./img/twitter.png" alt="twitter"
+								class="mobile:w-[99px] mobile:h-[82px] tablet:w-[149px] laptop:w-[149px] desktop:w-[149px] tablet:h-[122px] laptop:h-[122px] desktop:h-[122px]">
+						</div>
+						<div
+							class="swiper-slide flex justify-center mobile:mt-[7px] tablet:mt-3 laptop:mt-4 desktop:mt-[22px] mobile:order-1 mobile:mx-auto tablet:order-1 tablet:mx-auto ">
+							<img src="./img/twitter2.png" alt="twitter"
+								class="mobile:w-[99px] mobile:h-[82px] tablet:w-[149px] laptop:w-[149px] desktop:w-[149px] tablet:h-[122px] laptop:h-[122px] desktop:h-[122px]">
+						</div>
+						<div
+							class="swiper-slide flex justify-center mobile:mt-[7px] tablet:mt-3 laptop:mt-4 desktop:mt-[22px] mobile:order-1 mobile:mx-auto tablet:order-1 tablet:mx-auto ">
+							<img src="./img/twitter3.png" alt="twitter"
+								class="mobile:w-[99px] mobile:h-[82px] tablet:w-[149px] laptop:w-[149px] desktop:w-[149px] tablet:h-[122px] laptop:h-[122px] desktop:h-[122px]">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="mx-auto w-full max-w-[116px] text-center">
+			<h2 class="text-white uppercase mb-[19px] text-[13px]">Find out more</h2>
+			<a href="#about" class="flex justify-center">
+				<svg class="fill-white hover:fill-[#FF8B00] ease-in duration-200" width="62" height="71" viewBox="0 0 62 71"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M62 17.75L31 0L0 17.75V53.25L31 71L62 53.25V17.75ZM31 3.28249L59.1336 19.3912V51.6087L31 67.7175L2.8664 51.6087V19.3912L31 3.28249ZM19.2596 31.0114C18.4375 30.3157 17.207 30.4183 16.5114 31.2404C15.8157 32.0625 15.9183 33.293 16.7404 33.9886L29.7404 44.9886C30.4675 45.6038 31.5325 45.6038 32.2596 44.9886L45.2596 33.9886C46.0817 33.293 46.1843 32.0625 45.4886 31.2404C44.793 30.4183 43.5625 30.3157 42.7404 31.0114L31 40.9456L19.2596 31.0114Z" />
+				</svg>
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<div
+			class="flex mobile:flex-col tablet:flex-row laptop:flex-row flex-wrap mobile:justify-center tablet:justify-between laptop:justify-between desktop:justify-between w-full max-w-[899px] mx-auto mobile:mt-20 tablet:mt-20 laptop:mt-[142px] desktop:mt-[133px] mobile:mb-[53px] tablet:mb-[60px] laptop:mb-[131px] desktop:mb-[111px]"
+			id="products">
+			<div
+				class="text-[#7050E5] text-center w-full mobile:max-w-[207px] tablet:max-w-[207px] laptop:max-w-[260px] desktop:max-w-[260px] font-bold mobile:mb-[68px] mobile:mx-auto">
+				<span
+					class="mobile:text-[42px] tablet:text-[42px] laptop:text-6xl desktop:text-6xl mobile:leading-[50px] tablet:leading-[50px] laptop:leading-[68px] desktop:leading-[68px]">126,300</span>
+				<h2
+					class="mobile:text-[13px] tablet:text-[13px] laptop:text-[16px] desktop:text-[16px] mobile:leading-4 tablet:leading-4 laptop:leading-[18px] desktop:leading-[18px] uppercase mt-[14px] tracking-[-.02em]">
+					Identity Theft Cases Reported in Australia</h2>
+			</div>
+			<div
+				class="text-[#7050E5] text-center w-full mobile:max-w-[207px] tablet:max-w-[207px] laptop:max-w-[260px] desktop:max-w-[260px] font-bold mobile:mb-[68px] mobile:mx-auto">
+				<span
+					class="mobile:text-[42px] tablet:text-[42px] laptop:text-6xl desktop:text-6xl mobile:leading-[50px] tablet:leading-[50px] laptop:leading-[68px] desktop:leading-[68px]">$20.1bn</span>
+				<h2
+					class="mobile:text-[13px] tablet:text-[13px] laptop:text-[16px] desktop:text-[16px] mobile:leading-4 tablet:leading-4 laptop:leading-[18px] desktop:leading-[18px] uppercase mt-[14px] tracking-[-.02em]">
+					Online Transactions per annum by Australians</h2>
+			</div>
+			<div
+				class="text-[#7050E5] text-center w-full mobile:max-w-[207px] tablet:max-w-[207px] laptop:max-w-[260px] desktop:max-w-[260px] font-bold mobile:mb-[68px] mobile:mx-auto">
+				<span
+					class="mobile:text-[42px] tablet:text-[42px] laptop:text-6xl desktop:text-6xl mobile:leading-[50px] tablet:leading-[50px] laptop:leading-[68px] desktop:leading-[68px]">45,511</span>
+				<h2
+					class="mobile:text-[13px] tablet:text-[13px] laptop:text-[16px] desktop:text-[16px] mobile:leading-4 tablet:leading-4 laptop:leading-[18px] desktop:leading-[18px] uppercase mt-[14px] tracking-[-.02em]">
+					Online Fraud Cases Reported in Australia</h2>
+			</div>
+		</div>
+
+		<div class="w-full bg-[#F8F8F8]">
+			<div
+				class="w-full max-w-[993px] mx-auto mobile:mb-[22px] tablet:mb-[22px] laptop:mb-7 desktop:mb-7 mobile:pt-[39px] tablet:pt-10 laptop:pt-[164px] desktop:pt-[164px]"
+				id="services">
+				<div class="w-full flex mobile:justify-center tablet:justify-center laptop:justify-end desktop:justify-end">
+					<div
+						class="relative mobile:text-center tablet:text-center laptop:text-right desktop:text-right mobile:mb-10 tablet:mb-12 laptop:mb-16 desktop:mb-[71px]">
+						<h2
+							class="font-bold mobile:text-[34px] tablet:text-[40px] laptop:text-6xl desktop:text-6xl leading-[72px] text-[#7050E5] laptop:mr-14 desktop:mr-[57px] capitalize">
+							What we do
+							<span
+								class="inline-block absolute mobile:top-[-18px] tablet:top-[-15px] laptop:top-[-28px] desktop:top-[-19px] mobile:right-[-48px] tablet:right-[-66px] laptop:right-[-11px] desktop:right-[-13px] w-[46px] h-3 bg-[#FF8B00]"></span>
+							<span
+								class="inline-block absolute mobile:top-[1px] tablet:top-[3px] laptop:top-[-10px] desktop:top-[-1px] mobile:right-[-65px] tablet:right-[-83px] laptop:right-[-28px] desktop:right-[-30px] w-[46px] h-3 bg-[#FF8B00] rotate-90"></span>
+						</h2>
+
+					</div>
+				</div>
+				<div
+					class="flex mobile:flex-col mobile:justify-center tablet:justify-center laptop:justify-between desktop:justify-between flex-wrap pb-[125px] gap-10 px-4">
+					<div
+						class="w-full mobile:max-w-[271px] tablet:max-w-[45%] laptop:max-w-[272px] desktop:max-w-[271px] mobile:mb-[19px] tablet:mb-[29px] laptop:mb-[19px] desktop:mb-[29px] mobile:mx-auto tablet:mx-auto">
+						<img src="./img/services/service1.png" alt="services-icon"
+							class="mb-7 mobile:mx-auto tablet:mx-auto laptop:ml-[39px] desktop:ml-[39px] mobile:w-[106px] mobile:h-[109px]">
+						<h3
+							class="text-[#7050E5] font-bold text-[18px] tracking-[-.02em] leading-[20px] uppercase mobile:mb-4 tablet:mb-3 laptop:mb-3 desktop:mb-2">
+							Device Authentication</h3>
+						<p class="text-[15px] leading-[19px] tracking-[-.008em] text-[#878787] ">Hardware-based device
+							fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the
+							displayed UI independent of the device operating system. Hardware-level data protection.
+						</p>
+					</div>
+					<div
+						class="w-full mobile:max-w-[271px] tablet:max-w-[45%] laptop:max-w-[241px] desktop:max-w-[241px] mobile:mb-[21px] tablet:mb-[29px] laptop:mb-[29px] desktop:mb-[29px] mobile:mx-auto tablet:mx-auto">
+						<img src="./img/services/service2.png" alt="services-icon"
+							class="mobile:mb-[26px] tablet:mb-[27px] laptop:mb-[27px] desktop:mb-7 mx-auto mobile:w-[106px] mobile:h-[100px]">
+						<h3
+							class="text-[#7050E5] font-bold text-[18px] tracking-[-.02em] leading-[20px] uppercase mobile:mb-4 tablet:mb-3 laptop:mb-3 desktop:mb-2">
+							User Authentication</h3>
+						<p class="text-[15px] leading-[19px] tracking-[-.008em] text-[#878787] ">Verify the identity of users for
+							access control with contemporary biometric connected MFA security tokens.</p>
+					</div>
+					<div
+						class="w-full mobile:max-w-[272px] tablet:max-w-[45%] laptop:max-w-[285px] desktop:max-w-[285px] mb-[29px] mobile:mx-auto tablet:mx-auto">
+						<img src="./img/services/service3.png" alt="services-icon"
+							class="mb-[27px] mobile:mx-auto tablet:mx-auto laptop:ml-[62px] desktop:ml-[62px] mobile:w-[100px]">
+						<h3
+							class="text-[#7050E5] font-bold text-[18px] tracking-[-.02em] leading-[20px] uppercase mobile:mb-[14px] tablet:mb-3 laptop:mb-3 desktop:mb-2 ">
+							Transaction Authentication</h3>
+						<p class="text-[15px] leading-[19px] tracking-[-.008em] text-[#878787] ">High assurance out-of-band
+							authentication of high impact transactions and instructions initiated through electronic service delivery
+							channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle
+							and browser malware.
+						</p>
+					</div>
+					<div
+						class="w-full mobile:max-w-[272px] laptop:max-w-[271px] desktop:max-w-[271px] tablet:max-w-[45%] mobile:mb-[8px] mobile:mx-auto tablet:mx-auto">
+						<img src="./img/services/service4.png" alt="services-icon"
+							class="mb-[25px] mobile:mx-auto tablet:mx-auto laptop:ml-[58px] desktop:ml-[58px] mobile:w-[100px] mobile:h-[105px]">
+						<h3
+							class="text-[#7050E5] font-bold text-[18px] tracking-[-.02em] leading-[20px] uppercase mobile:mb-4 tablet:mb-3 laptop:mb-2 desktop:mb-[6px]">
+							Contemporary authentication methods</h3>
+						<p class="text-[15px] leading-[19px] tracking-[-.008em] text-[#878787] ">Echidna authentication server to
+							enable adaptive risk-based approach to security through a range of methods for different levels of
+							authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing
+							and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of
+							the transaction context and addition of PIN, Fingerprint and other biometrics.
+						</p>
+					</div>
+					<div
+						class="w-full mobile:max-w-[272px] tablet:max-w-[45%] laptop:max-w-[241px] desktop:max-w-[241px] mobile:mb-[20px] mt-[9px] mobile:mx-auto tablet:mx-auto">
+						<img src="./img/services/service5.png" alt="services-icon"
+							class="mb-7 mobile:ml-10 tablet:ml-9 laptop:ml-9 desktop:ml-[33px]">
+						<h3
+							class="text-[#7050E5] font-bold text-[18px] tracking-[-.02em] leading-[20px] uppercase mobile:mb-4 tablet:mb-3 laptop:mb-3 desktop:mb-2">
+							HSM Solutions</h3>
+						<p class="text-[15px] leading-[19px] tracking-[-.008em] text-[#878787] ">Reseller of Thales nShield HSMs
+							with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code
+							development.
+						</p>
+					</div>
+					<div
+						class="w-full mobile:max-w-[272px] laptop:max-w-[271px] desktop:max-w-[271px] tablet:max-w-[45%] laptop:mt-7 desktop:mt-7 mobile:mx-auto tablet:mx-auto">
+						<img src="./img/services/service6.png" alt="services-icon"
+							class="mb-7 mobile:mx-auto tablet:mx-auto laptop:ml-5 desktop:ml-[19px] ">
+						<h3
+							class="text-[#7050E5] font-bold text-[18px] tracking-[-.02em] leading-[20px] uppercase mobile:mb-4 tablet:mb-3 laptop:mb-3 desktop:mb-2">
+							Cloud & IoT Security</h3>
+						<p class="text-[15px] leading-[19px] tracking-[-.008em] text-[#878787] ">Secure the identity and access of
+							users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of
+							applications and data into private and public clouds.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="laptop:mt-[106px] desktop:mt-[106px] w-full max-w-[1342px] mx-auto mb-[97px] px-7 relative" id="about">
+			<div class="flex flex-wrap justify-between">
+				<div class="w-full max-w-[455px] ">
+					<h1
+						class="mobile:text-[24px] tablet:text-[24px] laptop:text-[40px] desktop:text-[40px] mobile:leading-8 tablet:leading-8 laptop:leading-[55px] desktop:leading-[55px] text-[#7050E5] font-bold mobile:mb-4 tablet:mb-3 laptop:mb-2 desktop:mb-[7px] laptop:mt-[96px] desktop:mt-[96px] capitalize">
+						Product Spotlight</h1>
+					<p class="text-[14px] leading-[21px] text-[#878787] tracking-[.02em] mb-[29px]">Salt mSign Connected Token is
+						a contemporary mobile security 2FA token for authentication of user identity and verification of
+						transactions independent of the delivery channel that initiated the request.</p>
+					</p>
+					<a href="#"
+						class="mobile:hidden tablet:inline-block laptop:inline-block desktop:inline-block text-[14px] leading-[18px] py-[13px] px-[47px] mb-10 bg-[#FF8B00] rounded-[4px] uppercase text-white duration-200 ease-in hover:scale-[1.05]">more
+						info</a>
+				</div>
+
+				<div
+					class="relative laptop:mr-[-19px] desktop:mr-[-19px] mobile:mt-[2px] laptop:mt-[31px] tablet:mt-[31px] w-full max-w-[724px] h-full max-h-[444px]">
+					<div class="video-player w-full ">
+						<video poster="./img/poster.jpg" src="./img/MGM.mp4" class="aspect-[1.63/1]" id="video" loop="loop"></video>
+					</div>
+					<div
+						class="absolute left-1/2 mobile:top-[81px] tablet:top-[173px] laptop:top-[173px] desktop:top-[173px] translate-x-[-50%] text-center w-full max-w-[425px] hidden overlay">
+						<button class="cursor-pointer mobile:mb-[18px] tablet:mb-6 laptop:mb-6 desktop:mb-[30px]" id="play">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor"
+								class="text-white mobile:w-[34px] mobile:h-[34px] tablet:w-[77px] tablet:h-[77px] laptop:w-[77px] laptop:h-[77px] desktop:w-[77px] desktop:h-[77px]">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+							</svg>
+
+						</button>
+						<button class="hidden cursor-pointer mobile:mb-[18px] tablet:mb-6 laptop:mb-6 desktop:mb-[30px]" id="pause">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor"
+								class="text-white mobile:w-[34px] mobile:h-[34px] tablet:w-[77px] tablet:h-[77px] laptop:w-[77px] laptop:h-[77px] desktop:w-[77px] desktop:h-[77px]">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+							</svg>
+						</button>
+						<div id="videoText">
+							<h3
+								class="uppercase font-[Raleway] mobile:mb-[2px] tablet:mb-1 laptop:mb-1 desktop:mb-2 mobile:text-[10px] tablet:text-[15px] laptop:text-[15px] desktop:text-[15px] font-semibold text-white mobile:leading-[14px] tablet:leading-4 laptop:leading-5 desktop:leading-5">
+								Feature video</h3>
+							<h2
+								class="uppercase font-[Raleway] mobile:text-[13px] tablet:text-[13px] laptop:text-[32px] desktop:text-[32px] mobile:leading-[22px] tablet:leading-[22px] laptop:leading-[38px] desktop:leading-[38px] text-white font-extrabold">
+								mSign Connected token</h2>
+						</div>
+
+					</div>
+				</div>
+
+				<a href="#"
+					class="mobile:block tablet:hidden laptop:hidden desktop:hidden mx-auto text-[14px] leading-[18px] py-[13px] px-[47px] bg-[#FF8B00] rounded-[4px] uppercase text-white mt-[40px] duration-200 ease-in hover:scale-[1.05]">more
+					info</a>
+			</div>
+		</div>
+		<div class="bg-[#232323] relative overflow-hidden" id="contact">
+			<div
+				class="w-full max-w-[1300px] mx-auto mobile:block tablet:block laptop:flex desktop:flex flex-wrap laptop:justify-between desktop:justify-between mobile:py-10 tablet:py-16 laptop:py-28 desktop:pt-[120px] desktop:pb-[111px] pl-7 pr-9">
+				<h2
+					class="text-white font-bold mobile:leading-10 tablet:leading-[45px] laptop:leading-[50px] desktop:leading-[55px] mobile:text-[34px] tablet:text-[40px] laptop:text-[45px] desktop:text-[55px] mobile:pb-12 tablet:pb-12 desktop:mt-2 w-full laptop:max-w-[320px] desktop:max-w-[382px] desktop:ml-4">
+					Ready <br /> to get started?</h2>
+				<div class="w-full laptop:max-w-[640px] desktop:max-w-[640px] mr-[-18px]">
+					<h3
+						class="text-white mobile:text-[20px] mobile:leading-6 desktop:leading-0 desktop:text-[28px] font-bold tracking-[-.027em] mb-7">
+						Contact us</h3>
+					<form>
+						<div class="tablet:flex laptop:flex desktop:flex justify-between tablet:gap-5">
+							<div
+								class="w-full tablet:max-w-[50%] laptop:max-w-[304px] desktop:max-w-[304px] mobile:mb-5 desktop:mb-7">
+								<h4 class="font-semibold text-[13px] mb-2 text-white capitalize">first name</h4>
+								<input type="text" placeholder="First Name"
+									class="w-full h-10 rounded-lg border-solid border-[1px] border-[#D2D6DA] py-[9px] px-[13px] text-black text-[14px] font-[Raleway] font-bold leading-[7px] placeholder:font-[Raleway] placeholder:font-medium placeholder:text-[#3d3d3d] placeholder:opacity-50 focus:outline-none focus:border-[#D2D6DA] duration-200 ease-in">
+							</div>
+							<div
+								class="w-full tablet:max-w-[50%] laptop:max-w-[304px] desktop:max-w-[312px] mobile:mb-5 desktop:mb-7">
+								<h4 class="font-semibold text-[13px] mb-2 text-white capitalize">last name</h4>
+								<input type="text" placeholder="Last Name"
+									class="w-full h-10 rounded-lg border-solid border-[1px] border-[#D2D6DA] py-[9px] px-[13px] text-black text-[14px] font-[Raleway] font-bold leading-[7px] placeholder:font-[Raleway] placeholder:font-medium placeholder:text-[#3d3d3d] placeholder:opacity-50 focus:outline-none focus:border-[#D2D6DA] duration-200 ease-in">
+							</div>
+						</div>
+						<div class="w-full mobile:mb-[18px] desktop:mb-7">
+							<h4 class="font-semibold text-[13px] mb-2 text-white capitalize">Email Address</h4>
+							<input type="text" placeholder="Email Address"
+								class="w-full h-10 rounded-lg border-solid border-[1px] border-[#D2D6DA] py-[9px] px-[13px] text-black text-[14px] font-[Raleway] font-bold leading-[7px] placeholder:font-[Raleway] placeholder:font-medium placeholder:text-[#3d3d3d] placeholder:opacity-50 focus:outline-none focus:border-[#D2D6DA] duration-200 ease-in">
+						</div>
+						<div class="w-full mb-[32px]">
+							<h4 class="font-semibold text-[13px] mb-2 text-white capitalize">Your message</h4>
+							<textarea cols="30" rows="10" placeholder="Textarea"
+								class="w-full rounded-lg resize-none min-h-[96px] h-[96px] border-solid border-[1px] border-[#D2D6DA] py-[15px] px-[13px] text-black text-[14px] placeholder:font-[Raleway] placeholder:font-medium font-[Raleway] font-bold leading-[7px] placeholder:text-[#3d3d3d] placeholder:opacity-50 focus:outline-none focus:border-[#D2D6DA] duration-200 ease-in"></textarea>
+						</div>
+						<div class="w-full mobile:flex mobile:justify-center ">
+							<button type="submit"
+								class="mx-auto text-[14px] leading-[18px] py-[18px] px-[82px] bg-[#FF8B00] rounded-[4px] uppercase text-white duration-200 ease-in hover:scale-[1.05]">Send</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<span
+				class="absolute blur-[250px] bottom-[308px] left-[-200px] inline-block opacity-[.33] w-full max-w-[747px] h-full max-h-[757px] rotate-[-123deg] bg-gradient-to-r from-[#F101BF] to-[#0066FF]"></span>
+			<span
+				class="mobile:bottom-[420px] mobile:hidden absolute desktop:bottom-[-206px] right-[193px] blur-[250px] desktop:inline-block opacity-[.33] w-full max-w-[472px] h-full max-h-[479px] rotate-[6deg] bg-gradient-to-r from-[#F101BF] via-[#0066FF] to-[#0066FF]"></span>
+		</div>
+
+	</main>
+
+	<footer class="mt-[97px] bg-[#363636] mobile:pt-[56px] tablet:pt-14 laptop:pt-14 desktop:pt-14 relative px-[38px]">
+		<div class="w-full max-w-[1153px] flex flex-wrap mx-auto justify-between tablet:flex-col mobile:pb-20 pb-[49px]">
+			<div
+				class="w-full max-w-[299px] bg-white mobile:mb-[55px] tablet:mb-[55px] tablet:mx-auto mobile:mx-auto mobile:mt-[5px] ">
+				<div class="bg-[#7050E5] flex flex-wrap">
+					<div class="px-[10px] py-[10px] pb-[11px] bg-[#5634D1] max-w-[59px]">
+						<svg class="fill-white w-9 h-9" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M19.5 39C30.2696 39 39 30.2696 39 19.5C39 8.73045 30.2696 0 19.5 0C8.73045 0 0 8.73045 0 19.5C0 30.2696 8.73045 39 19.5 39ZM37.5 19.5C37.5 29.4411 29.4411 37.5 19.5 37.5C9.55887 37.5 1.5 29.4411 1.5 19.5C1.5 9.55887 9.55887 1.5 19.5 1.5C29.4411 1.5 37.5 9.55887 37.5 19.5ZM26.7246 17.4681C26.7246 17.3178 26.7246 17.1689 26.7143 17.02C27.3916 16.5293 27.977 15.9219 28.4417 15.2247C27.8104 15.5053 27.14 15.6893 26.4538 15.7702C27.1763 15.3372 27.7172 14.6557 27.9756 13.8535C27.2956 14.257 26.5525 14.5418 25.7773 14.6949C24.4666 13.2997 22.2738 13.2324 20.8795 14.5446C19.9801 15.3907 19.599 16.6521 19.878 17.8558C17.0942 17.7165 14.5011 16.4002 12.7435 14.2351C11.8249 15.819 12.2938 17.8449 13.8149 18.8626C13.2638 18.8461 12.725 18.6972 12.2438 18.4289V18.4728C12.2438 20.1226 13.4056 21.5432 15.0206 21.8699C14.5113 22.0092 13.9767 22.0298 13.4577 21.9296C13.9115 23.3412 15.2105 24.3082 16.6919 24.3363C15.4655 25.3005 13.9513 25.8242 12.3925 25.8228C12.1169 25.8221 11.8421 25.8056 11.5686 25.7727C13.152 26.7898 14.9939 27.3292 16.8749 27.3264V27.3292C23.2423 27.3292 26.7246 22.0476 26.7246 17.4681Z" />
+						</svg>
+					</div>
+
+					<div class="py-[11px] pl-4">
+						<h3 class="font-medium text-[22px] leading-[18px] tracing-[.008em] text-white mb-[2px] flex items-center">
+							<span class="text-[13px]">@</span>saltgroup
+						</h3>
+						<p class="text-[14px] leading-[18px] tracing-[-0.008em] text-white">Twitter feed</p>
+					</div>
+				</div>
+
+				<div class="pt-5 pl-[31px] pr-[47px] pb-[19px]">
+					<div class="text-[13px] leading-[18px] mb-4 min-h-[60px]">
+						<p class="text-[#999999] tracking-[-0.02em]">Experience more with expanded Tweets</p>
+						<a class="text-[#7050E5] duration-200 ease-in hover:text-[#473bb8]"
+							href="http://testing123.com.au">http://testing123.com.au</a>
+						<div>
+							<time class="text-[#555555] tracking-[-0.01em] text-[11px]">18 hours ago</time>
+						</div>
+					</div>
+
+					<div class="text-[13px] leading-[18px] mb-4 min-h-[60px]">
+						<p class="text-[#999999] tracking-[-0.02em]">Tailored Trends bring you closer</p>
+						<a class="text-[#7050E5] duration-200 ease-in hover:text-[#473bb8]"
+							href="http://testing123.com.au">http://testing123.com.au</a>
+						<div>
+							<time class="text-[#555555] tracking-[-0.01em] text-[11px]">12 June 2016</time>
+						</div>
+					</div>
+
+					<div class="text-[13px] leading-[18px] min-h-[42px]">
+						<p class="text-[#999999] tracking-[-0.02em]">Our new nest. <a
+								class="text-[#7050E5] duration-200 ease-in hover:text-[#473bb8]"
+								href="http://testing123.com.au">http://testing123.com.au</a></p>
+						<div>
+							<time class="text-[#555555] tracking-[-0.01em] text-[11px]">11 June 2016</time>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div
+				class="w-full mobile:max-w-[733px] tablet:max-w-[600px] desktop:ml-[119px] laptop:max-w-[600px] desktop:max-w-[733px] flex justify-between flex-wrap gap-[15px] mobile:mt-[7px] mobile:px-[13px]">
+				<div class="mobile:max-w-[110px] mobile:mb-[34px]">
+					<h3
+						class="flex text-[#FF8B00] text-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 font-bold uppercase mobile:mb-3 tablet:mb-4 laptop:mb-4 desktop:mb-5">
+						<svg class="mr-2 fill-[#FF8B00]" width="18" height="20" viewBox="0 0 18 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" />
+						</svg> Navigation
+					</h3>
+
+					<ul>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#home">home</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#products">products</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#services">services</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#resources">resources</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#about">about</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7]">
+							<a href="#contact">contact us</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="mobile:max-w-[110px] ml-[26px]">
+					<h3
+						class="flex text-[#FF8B00] text-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 font-bold uppercase mobile:mb-3 tablet:mb-4 laptop:mb-4 desktop:mb-5">
+						<svg class="mr-2 fill-[#FF8B00]" width="18" height="20" viewBox="0 0 18 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" />
+						</svg> Links
+					</h3>
+
+					<ul>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#">disclamer</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#">legal</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7] mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<a href="#">Environment Policy</a>
+						</li>
+						<li
+							class="font-semibold font-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white uppercase duration-200 ease-in hover:text-[#c7c7c7]">
+							<a href="#">privacy</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="max-w-[209px] mobile:mx-auto">
+					<h3
+						class="flex text-[#FF8B00] text-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 font-bold uppercase mb-5 mobile:ml-8">
+						<svg class="mr-2 fill-[#FF8B00] flex" width="18" height="20" viewBox="0 0 18 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" />
+						</svg> contact sales
+					</h3>
+
+					<div>
+						<p
+							class="text-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white mobile:mb-[6px] tablet:mb-[7px] laptop:mb-[7px] desktop:mb-2">
+							<span class="uppercase font-semibold">Phone:</span> +61 3 9614 4416
+						</p>
+						<p class="text-[14px] mobile:leading-[18px] tablet:leading-5 laptop:leading-5 desktop:leading-5 text-white">
+							<span class="uppercase font-semibold">Email:</span> sales@saltgroup.com.au
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+		<a href="#home"
+			class="laptop:absolute laptop:right-8 laptop:bottom-[30px] desktop:absolute desktop:right-8 desktop:bottom-[30px] duration-200 ease-in hover:scale-[1.05] mobile:flex mobile:justify-center mobile:pb-20 tablet:flex tablet:justify-center tablet:pb-20 mobile:mt-8">
+			<img src="./img/logotype.png" alt="logotype" class="mobile:w-[88px]">
+		</a>
+
+	</footer>
+
+	<div
+		class="w-full bg-[#252525] text-center font-[Raleway] mobile:text-[8px] tablet:text-[9px] laptop:text-[9px] desktop:text-[10px] leading-[20px] uppercase font-medium  text-white mobile:pt-[37px] mobile:pb-[38px] tablet:py-[25px] laptop:py-4 desktop:pt-[1px]  desktop:pb-[2px] flex items-center justify-center">
+		<span class="">© 2017 SALT GROUP </span>
+		<svg class="fill-[#FF8B00] mx-[2px]" width="9" height="10" viewBox="0 0 18 20" fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" />
+		</svg> <span class="">ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</span>
+	</div>
+
+
+	<script type="module">
+		import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+		const swiper = new Swiper('.swiper-container', {
+			direction: 'horizontal',
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+				type: 'bullets'
+			},
+		})
+	</script>
+</body>
+
+</html>

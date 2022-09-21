@@ -1,0 +1,88 @@
+/* @font-face {
+	font-family: 'Proxima Nova';
+	src: url('fonts/proximanova_regular.eot');
+	src: local('☺'), url('fonts/proximanova_regular.woff') format('woff'), url('fonts/proximanova_regular.ttf') format('truetype'), url('fonts/proximanova_regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} */
+/* @font-face {
+	font-family: 'Proxima Nova';
+	src: url('fonts/proximanova_bold.eot');
+	src: local('☺'), url('fonts/proximanova_bold.woff') format('woff'), url('fonts/proximanova_bold.ttf') format('truetype'), url('fonts/proximanova_bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+} */
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('fonts/ofont.ru_Proxima Nova.eot');
+	src: local('☺'), url('fonts/ofont.ru_Proxima Nova.woff') format('woff'), url('fonts/ofont.ru_Proxima Nova.ttf') format('truetype'), url('fonts/ofont.ru_Proxima Nova.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Proxima Nova', sans-serif;
+	box-sizing: border-box;
+}
+
+.lock {
+	overflow: hidden;
+}
+
+.burger.active span {
+	background-color: #333333;
+}
+
+.burger:hover span:first-child, .burger.active span:first-child {
+	transform: rotate(45deg) translateY(0.7rem);
+}
+
+.burger:hover span:last-child, .burger.active span:last-child {
+	transform: rotate(-45deg) translateY(-0.7rem);
+}
+.burger:hover span:nth-child(2), .burger.active span:nth-child(2) {
+	opacity: 0;
+}
+
+nav.active {
+	left: 0;
+}
+
+.swiper-pagination {
+	width: 19px;
+	height: 88px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.swiper-pagination-bullet {
+	width: 19px;
+	height: 22px;
+	background-color: transparent;
+	background-image: url('./img/hexagon-white.png');
+	transition: .3s ease;
+	opacity: 1;
+	border-radius: 0;
+}
+.swiper-pagination-bullet-active, .swiper-pagination-bullet:hover {
+	background-image: url('./img/hexagon-orange.png')
+}
+
+.video-player {
+	
+}
+
+.video-player video {
+	width: 100%;
+}
+
+.video-player:hover~.overlay {
+	display: inline;
+}
+.overlay:hover {
+	display: inline;
+}
