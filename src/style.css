@@ -1,17 +1,15 @@
-/* @font-face {
+@font-face {
 	font-family: 'Proxima Nova';
-	src: url('fonts/proximanova_regular.eot');
-	src: local('☺'), url('fonts/proximanova_regular.woff') format('woff'), url('fonts/proximanova_regular.ttf') format('truetype'), url('fonts/proximanova_regular.svg') format('svg');
+	src: local('☺'), url('fonts/proximanova_regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-} */
-/* @font-face {
+} 
+@font-face {
 	font-family: 'Proxima Nova';
-	src: url('fonts/proximanova_bold.eot');
-	src: local('☺'), url('fonts/proximanova_bold.woff') format('woff'), url('fonts/proximanova_bold.ttf') format('truetype'), url('fonts/proximanova_bold.svg') format('svg');
+	src: local('☺'), url('fonts/proximanova_bold.otf') format('otf');
 	font-weight: 700;
 	font-style: normal;
-} */
+} 
 @font-face {
 	font-family: 'Proxima Nova';
 	src: url('fonts/ofont.ru_Proxima Nova.eot');
